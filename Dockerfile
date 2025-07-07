@@ -23,4 +23,5 @@ EXPOSE 8000
 
 # Executa a aplicação. A flag --host 0.0.0.0 é essencial para tornar
 # a aplicação acessível de fora do contêiner.
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
