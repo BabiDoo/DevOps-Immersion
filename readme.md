@@ -1,64 +1,80 @@
-# Imersão DevOps - Alura Google Cloud
+# DevOps Immersion - Alura + Google Cloud
 
-Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e matrículas em uma instituição de ensino.
+This project is an API developed using **FastAPI** to manage students, courses, and enrollments in an educational institution.
 
-## Pré-requisitos
+---
 
-- [Python 3.10 ou superior instalado](https://www.python.org/downloads/)
+## ✅ Prerequisites
+
+- [Python 3.10 or higher](https://www.python.org/downloads/)
 - [Git](https://git-scm.com/downloads)
 - [Docker](https://www.docker.com/get-started/)
 
-## Passos para subir o projeto
+---
 
-1. **Faça o download do repositório:**
-   [Clique aqui para realizar o download](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip)
+## 🚀 How to Run the Project
 
-2. **Crie um ambiente virtual:**
-   ```sh
+1. **Download the repository:**  
+   [Click here to download](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip)
+
+2. **Create a virtual environment:**
+   ```bash
    python3 -m venv ./venv
-   ```
+   ````
 
-3. **Ative o ambiente virtual:**
-   - No Linux/Mac:
-     ```sh
+
+3. **Activate the virtual environment:**
+
+   * On Linux/Mac:
+
+     ```bash
      source venv/bin/activate
      ```
-   - No Windows:
-     ```sh
+   * On Windows:
+
+     ```bash
      venv\Scripts\activate
      ```
 
-4. **Instale as dependências:**
-   ```sh
+4. **Install dependencies:**
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-5. **Execute a aplicação:**
-   ```sh
+5. **Run the application:**
+
+   ```bash
    uvicorn app:app --reload
    ```
 
-6. **Acesse a documentação interativa:**
-
-   Abra o navegador e acesse:  
+6. **Access the interactive documentation:**
+   Open your browser and go to:
    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-   Aqui você pode testar todos os endpoints da API de forma interativa.
+   You can test all API endpoints interactively there.
 
 ---
 
-## Estrutura do Projeto
+## 🧱 Project Structure
 
-- `app.py`: Arquivo principal da aplicação FastAPI.
-- `models.py`: Modelos do banco de dados (SQLAlchemy).
-- `schemas.py`: Schemas de validação (Pydantic).
-- `database.py`: Configuração do banco de dados SQLite.
-- `routers/`: Diretório com os arquivos de rotas (alunos, cursos, matrículas).
-- `requirements.txt`: Lista de dependências do projeto.
+```
+├── app.py              # Main FastAPI application
+├── database.py         # SQLite database configuration
+├── models.py           # Database models (SQLAlchemy)
+├── schemas.py          # Validation schemas (Pydantic)
+├── routers/            # Routes for students, courses, enrollments
+├── requirements.txt    # List of project dependencies
+```
+
+---
+
+## 🗃️ Notes
+
+* The SQLite database (`escola.db`) will be created automatically on the first run.
+* If you want to reset the database, simply delete the `escola.db` file (this will remove all data).
 
 ---
 
-- O banco de dados SQLite será criado automaticamente como `escola.db` na primeira execução.
-- Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
-
----
+✨ Feel free to explore, test, and improve this project!
+⭐ If you found it useful, consider starring the repo!
